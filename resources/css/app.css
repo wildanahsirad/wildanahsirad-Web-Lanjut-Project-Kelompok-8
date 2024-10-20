@@ -1,0 +1,278 @@
+.link{
+  margin: 10px;
+}
+
+.link.active {
+  background-color: red;
+  color: white;
+}
+
+/* Gaya untuk Header */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Biar ga tumpang tindih kalau misal ada penambahan code yg indexnya lebih tinggi dari navbar */
+
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between; /* Membuat dua bagian, kiri dan kanan */
+    align-items: center;
+  }
+  
+  nav .nav-left,
+  nav .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .nav-left ul,
+  nav .nav-right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav .nav-left li {
+    margin-right: 15px; /* Spasi antar item di kiri */
+  }
+  
+  nav .nav-right li {
+    margin-left: 15px; /* Spasi antar icon di kanan */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+  }
+  
+  
+  /* Gaya untuk Hero Section */
+  .hero-section {
+    background-color: #e0e0e0;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .get-started-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  .get-started-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Gaya untuk bagian registrasi dan login */
+  .auth-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .register-box, .login-box {
+    width: 45%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .register-box h3, .login-box h3 {
+    margin-bottom: 15px;
+  }
+  .register-box form, .login-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  .register-box input, .login-box input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .register-box button, .login-box button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .register-box button:hover, .login-box button:hover {
+    background-color: #218838;
+  }
+  .register-box p, .login-box p {
+    font-size: 12px;
+    color: #666;
+  }
+  .register-box p a, .login-box p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .register-box p a:hover, .login-box p a:hover {
+    text-decoration: underline;
+  }
+  
+/* Gaya untuk Grid Produk */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .product-card {
+    background-color: #d0d8ff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .product-image {
+    height: 150px;
+    background-color: #e0e0e0;
+  }
+  .placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+  }
+  .product-details {
+    padding: 10px;
+  }
+  .product-details h3 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  .quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .quantity-control button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .quantity-control button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Gaya untuk Keranjang Belanja */
+  .cart-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 2px solid #ccc;
+  }
+  .cart-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .cart-items {
+    display: flex;
+    gap: 20px;
+  }
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .cart-item i {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+ /* Gaya untuk Transaksi Section */
+.transaction-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  .transaction-section h3 {
+    margin-bottom: 15px;
+  }
+  .transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .submit-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Gaya untuk About Section */
+  .about-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .about-section h3 {
+    margin-bottom: 15px;
+  }
+  .about-info {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Gaya untuk Contact Info Section */
+  .contact-info {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 2px solid #ccc;
+  }
+  .contact-info h3 {
+    margin-bottom: 10px;
+  }
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  /* Gaya untuk Footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ccc;
+  }
+  
